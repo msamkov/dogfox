@@ -9,10 +9,10 @@ import org.springframework.stereotype.Service;
 import java.util.ArrayList;
 
 @Service
-public class MyDetailsService implements UserDetailsService {
+public class MyUserDetailsService implements UserDetailsService {
 
     @Override
     public UserDetails loadUserByUsername(String userName) throws UsernameNotFoundException {
-        return new User("foo", "foo2", new ArrayList<>());
+        return new User("foo2", "foo2", new ArrayList<>());
     }
 }
